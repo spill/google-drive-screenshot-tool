@@ -1,0 +1,62 @@
+{
+  "capture_time": "2025-10-26T18:42:03.906483",
+  "total_files": 3,
+  "files": [
+    {
+      "id": "1a1Od70m63F5I-VcPOVmoPt5mYzcM6KOjMom-pDjmuOk",
+      "name": "Ryan_Trinh.Resume",
+      "mimeType": "application/vnd.google-apps.document",
+      "viewedByMeTime": "2025-10-26T03:13:07.738Z",
+      "createdTime": "2024-03-05T03:57:24.670Z",
+      "modifiedTime": "2025-10-07T06:54:43.102Z",
+      "owners": [
+        {
+          "kind": "drive#user",
+          "displayName": "ry",
+          "photoLink": "https://lh3.googleusercontent.com/a/ACg8ocJC2h3OQ9haIEg33rMuPXlLPzT_Ob3JF06m7tZK-Sf7QHT5mat4=s64",
+          "me": true,
+          "permissionId": "04981480736245273753",
+          "emailAddress": "htumat@gmail.com"
+        }
+      ],
+      "size": "8462"
+    },
+    {
+      "id": "1QWoHM5VWk6b9wyTgnnw1wzFWo0LRu7uT6xYGembTGg4",
+      "name": "Copy of Ryan_Trinh.Resume",
+      "mimeType": "application/vnd.google-apps.document",
+      "viewedByMeTime": "2025-10-26T03:13:34.348Z",
+      "createdTime": "2024-03-20T22:08:06.005Z",
+      "modifiedTime": "2024-03-20T22:08:06.005Z",
+      "owners": [
+        {
+          "kind": "drive#user",
+          "displayName": "ry",
+          "photoLink": "https://lh3.googleusercontent.com/a/ACg8ocJC2h3OQ9haIEg33rMuPXlLPzT_Ob3JF06m7tZK-Sf7QHT5mat4=s64",
+          "me": true,
+          "permissionId": "04981480736245273753",
+          "emailAddress": "htumat@gmail.com"
+        }
+      ],
+      "size": "7142"
+    },
+    {
+      "id": "1sIXqGuh-rd3d5wa0eLm3rTPxbi083g5oor6M5ZplRT0",
+      "name": "Ryan Trinh Resume - Physics Project",
+      "mimeType": "application/vnd.google-apps.document",
+      "viewedByMeTime": "2025-10-26T03:13:46.869Z",
+      "createdTime": "2021-05-18T21:58:27.151Z",
+      "modifiedTime": "2021-05-19T23:36:08.290Z",
+      "owners": [
+        {
+          "kind": "drive#user",
+          "displayName": "ry",
+          "photoLink": "https://lh3.googleusercontent.com/a/ACg8ocJC2h3OQ9haIEg33rMuPXlLPzT_Ob3JF06m7tZK-Sf7QHT5mat4=s64",
+          "me": true,
+          "permissionId": "04981480736245273753",
+          "emailAddress": "htumat@gmail.com"
+        }
+      ]
+    }
+  ]
+}

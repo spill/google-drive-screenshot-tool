@@ -1,0 +1,41 @@
+{
+  "verification_timestamp": "2025-10-26T17:57:31.679875",
+  "verifier_version": "1.0",
+  "hash_algorithm": "SHA-256",
+  "verification_count": 1,
+  "verifications": [
+    {
+      "timestamp": "2025-10-26T17:57:31.679875",
+      "before_hash": "50ce8c5708218dcba853b2623c87bc1c618fabb8b5d97b67ae9f9b37613da54b",
+      "after_hash": "50ce8c5708218dcba853b2623c87bc1c618fabb8b5d97b67ae9f9b37613da54b",
+      "match": true,
+      "total_files": 3,
+      "file_details": [
+        {
+          "file_id": "1a1Od70m63F5I-VcPOVmoPt5mYzcM6KOjMom-pDjmuOk",
+          "file_name": "Ryan_Trinh.Resume",
+          "before_hash": "6d407cdc563dc3474e9dd977d280f77f2b5817a2c7b2495e10533c38ca7c9a96",
+          "after_hash": "6d407cdc563dc3474e9dd977d280f77f2b5817a2c7b2495e10533c38ca7c9a96",
+          "timestamps_match": true,
+          "changes": null
+        },
+        {
+          "file_id": "1QWoHM5VWk6b9wyTgnnw1wzFWo0LRu7uT6xYGembTGg4",
+          "file_name": "Copy of Ryan_Trinh.Resume",
+          "before_hash": "073770db1ecd22dcd11c86195b04658cd3cfedaa4de838fc3c836d2ca25a4fe1",
+          "after_hash": "073770db1ecd22dcd11c86195b04658cd3cfedaa4de838fc3c836d2ca25a4fe1",
+          "timestamps_match": true,
+          "changes": null
+        },
+        {
+          "file_id": "1sIXqGuh-rd3d5wa0eLm3rTPxbi083g5oor6M5ZplRT0",
+          "file_name": "Ryan Trinh Resume - Physics Project",
+          "before_hash": "057206a24eba6dc90f5449d714bcfe59884ee4e9ba704ab79038e3e020458e15",
+          "after_hash": "057206a24eba6dc90f5449d714bcfe59884ee4e9ba704ab79038e3e020458e15",
+          "timestamps_match": true,
+          "changes": null
+        }
+      ]
+    }
+  ]
+}
