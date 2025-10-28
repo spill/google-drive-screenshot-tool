@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Google Drive File Documentation Tool - Clean GUI
-Simple, functional interface with all the features
+Google Drive File Documentation Tool - Multi-Mode GUI
+Supports: Full Mode (API) and Hybrid Mode (UI Scraping)
 """
 
 import customtkinter as ctk
@@ -14,29 +14,33 @@ from difflib import SequenceMatcher
 from drive_forensic_tool import DriveForensicTool
 from screenshot_tool import DriveScreenshotTool
 from forensic_verifier import ForensicVerifier
+from ui_scraper import DriveUIScraper, generate_hash_from_scraped_data
 
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
 
-class ForensicToolGUI:
+class MultiModeForensicGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Google Drive File Documentation Tool")
-        self.root.geometry("1000x700")
+        self.root.title("Google Drive Metadata Capture Tool")
+        self.root.geometry("1000x750")
         
         # Tools
         self.api_tool = None
         self.screenshot_tool = None
         self.verifier = ForensicVerifier()
+        self.ui_scraper = None
         self.files = []
+        self.file_names = []  # For hybrid mode
         self.authenticated = False
         self.baseline_metadata = []
         
         # Session tracking
         self.current_session = None
         self.session_baseline_hash = None
+        self.mode = "full"  # full or hybrid
         
         # Create output directories
         self.screenshot_dir = 'GoogleDrive_Screenshots'
@@ -47,7 +51,7 @@ class ForensicToolGUI:
         self.setup_ui()
         
     def setup_ui(self):
-        """Setup simple, clean UI"""
+        """Setup UI with mode selection"""
         
         # Main container
         main = ctk.CTkFrame(self.root)
@@ -56,9 +60,39 @@ class ForensicToolGUI:
         # Title
         ctk.CTkLabel(
             main,
-            text="Google Drive File Documentation Tool",
+            text="Google Drive Metadata Capture Tool",
             font=ctk.CTkFont(size=24, weight="bold")
         ).pack(pady=10)
+        
+        # MODE SELECTOR
+        mode_frame = ctk.CTkFrame(main, fg_color="gray20", corner_radius=10)
+        mode_frame.pack(fill="x", padx=10, pady=(0, 10))
+        
+        ctk.CTkLabel(
+            mode_frame,
+            text="Select Mode:",
+            font=ctk.CTkFont(size=14, weight="bold")
+        ).pack(anchor="w", padx=10, pady=(10, 5))
+        
+        self.mode_var = ctk.StringVar(value="full")
+        
+        ctk.CTkRadioButton(
+            mode_frame,
+            text="Full Mode (API + Screenshots) - Best quality, requires authentication",
+            variable=self.mode_var,
+            value="full",
+            command=self.on_mode_change,
+            font=ctk.CTkFont(size=12)
+        ).pack(anchor="w", padx=20, pady=3)
+        
+        ctk.CTkRadioButton(
+            mode_frame,
+            text="Hybrid Mode (UI Scraping + Screenshots) - No API needed, manual login",
+            variable=self.mode_var,
+            value="hybrid",
+            command=self.on_mode_change,
+            font=ctk.CTkFont(size=12)
+        ).pack(anchor="w", padx=20, pady=(3, 10))
         
         # Two column layout
         content = ctk.CTkFrame(main)
@@ -81,40 +115,43 @@ class ForensicToolGUI:
         scroll = ctk.CTkScrollableFrame(parent)
         scroll.pack(fill="both", expand=True, padx=10, pady=10)
         
+        # FULL MODE SECTION
+        self.full_mode_frame = ctk.CTkFrame(scroll, fg_color="transparent")
+        self.full_mode_frame.pack(fill="x")
+        
         # Step 1: Authentication
         ctk.CTkLabel(
-            scroll,
-            text="1. Authentication",
+            self.full_mode_frame,
+            text="1. Authentication (Full Mode Only)",
             font=ctk.CTkFont(size=16, weight="bold")
         ).pack(anchor="w", pady=(0, 5))
         
         self.auth_btn = ctk.CTkButton(
-            scroll,
-            text="Authenticate with Google",
+            self.full_mode_frame,
+            text="Authenticate with Google API",
             command=self.authenticate,
             height=40
         )
         self.auth_btn.pack(fill="x", pady=5)
         
-        self.auth_status = ctk.CTkLabel(scroll, text="Not authenticated", text_color="gray")
+        self.auth_status = ctk.CTkLabel(self.full_mode_frame, text="Not authenticated", text_color="gray")
         self.auth_status.pack(anchor="w", pady=(0, 10))
         
         # Separator
-        ctk.CTkFrame(scroll, height=2, fg_color="gray").pack(fill="x", pady=10)
+        ctk.CTkFrame(self.full_mode_frame, height=2, fg_color="gray").pack(fill="x", pady=10)
         
-        # Step 2: Search
+        # Step 2: API Search
         ctk.CTkLabel(
-            scroll,
-            text="2. File Search",
+            self.full_mode_frame,
+            text="2. File Search (API)",
             font=ctk.CTkFont(size=16, weight="bold")
         ).pack(anchor="w", pady=(0, 5))
         
         self.search_type = ctk.StringVar(value="all")
         
-        ctk.CTkRadioButton(scroll, text="All files", variable=self.search_type, value="all").pack(anchor="w", pady=2)
+        ctk.CTkRadioButton(self.full_mode_frame, text="All files", variable=self.search_type, value="all").pack(anchor="w", pady=2)
         
-        # Max results for "All files"
-        max_frame = ctk.CTkFrame(scroll, fg_color="transparent")
+        max_frame = ctk.CTkFrame(self.full_mode_frame, fg_color="transparent")
         max_frame.pack(fill="x", padx=20, pady=2)
         
         ctk.CTkLabel(max_frame, text="Max results:").pack(side="left", padx=(0, 5))
@@ -126,9 +163,9 @@ class ForensicToolGUI:
         self.max_results.set("20")
         self.max_results.pack(side="left")
         
-        ctk.CTkRadioButton(scroll, text="Date range", variable=self.search_type, value="date").pack(anchor="w", pady=2)
+        ctk.CTkRadioButton(self.full_mode_frame, text="Date range", variable=self.search_type, value="date").pack(anchor="w", pady=2)
         
-        date_frame = ctk.CTkFrame(scroll, fg_color="transparent")
+        date_frame = ctk.CTkFrame(self.full_mode_frame, fg_color="transparent")
         date_frame.pack(fill="x", padx=20, pady=2)
         
         ctk.CTkLabel(date_frame, text="Start:").pack(side="left")
@@ -139,37 +176,56 @@ class ForensicToolGUI:
         self.end_date = ctk.CTkEntry(date_frame, width=100, placeholder_text="2024-12-31")
         self.end_date.pack(side="left", padx=5)
         
-        ctk.CTkRadioButton(scroll, text="Search by name", variable=self.search_type, value="name").pack(anchor="w", pady=2)
-        
-        self.search_name = ctk.CTkEntry(scroll, placeholder_text="Enter file name")
-        self.search_name.pack(fill="x", padx=20, pady=2)
-        
-        ctk.CTkRadioButton(scroll, text="Multiple files (fuzzy match)", variable=self.search_type, value="multi").pack(anchor="w", pady=2)
-        
-        self.multi_names = ctk.CTkTextbox(scroll, height=100)
-        self.multi_names.pack(fill="x", padx=20, pady=2)
-        
-        ctk.CTkButton(
-            scroll,
-            text="Load from file",
-            command=self.load_file_list,
-            height=28,
-            fg_color="gray"
-        ).pack(fill="x", padx=20, pady=2)
-        
-        self.search_btn = ctk.CTkButton(
-            scroll,
-            text="Search Files",
-            command=self.search_files,
+        self.api_search_btn = ctk.CTkButton(
+            self.full_mode_frame,
+            text="Search Files (API)",
+            command=self.search_files_api,
             height=40,
             state="disabled"
         )
-        self.search_btn.pack(fill="x", pady=10)
+        self.api_search_btn.pack(fill="x", pady=10)
+        
+        # HYBRID MODE SECTION
+        self.hybrid_mode_frame = ctk.CTkFrame(scroll, fg_color="transparent")
+        self.hybrid_mode_frame.pack(fill="x")
+        self.hybrid_mode_frame.pack_forget()  # Hidden by default
+        
+        ctk.CTkLabel(
+            self.hybrid_mode_frame,
+            text="1. File Names (Manual Input)",
+            font=ctk.CTkFont(size=16, weight="bold")
+        ).pack(anchor="w", pady=(0, 5))
+        
+        ctk.CTkLabel(
+            self.hybrid_mode_frame,
+            text="Enter file names (one per line):",
+            font=ctk.CTkFont(size=11)
+        ).pack(anchor="w", pady=(0, 5))
+        
+        self.multi_names = ctk.CTkTextbox(self.hybrid_mode_frame, height=150)
+        self.multi_names.pack(fill="x", pady=5)
+        
+        ctk.CTkButton(
+            self.hybrid_mode_frame,
+            text="📄 Load from file",
+            command=self.load_file_list,
+            height=32,
+            fg_color="gray"
+        ).pack(fill="x", pady=5)
+        
+        self.hybrid_search_btn = ctk.CTkButton(
+            self.hybrid_mode_frame,
+            text="Start Hybrid Workflow",
+            command=self.start_hybrid_workflow,
+            height=40,
+            fg_color="purple"
+        )
+        self.hybrid_search_btn.pack(fill="x", pady=10)
         
         # Separator
         ctk.CTkFrame(scroll, height=2, fg_color="gray").pack(fill="x", pady=10)
         
-        # Step 3: Screenshots
+        # Step 3: Screenshots (common to both modes)
         ctk.CTkLabel(
             scroll,
             text="3. Screenshot Capture",
@@ -199,7 +255,7 @@ class ForensicToolGUI:
         # Separator
         ctk.CTkFrame(scroll, height=2, fg_color="gray").pack(fill="x", pady=10)
         
-        # Step 4: Verify
+        # Step 4: Verify (only enabled if baseline exists)
         ctk.CTkLabel(
             scroll,
             text="4. Integrity Verification",
@@ -231,8 +287,24 @@ class ForensicToolGUI:
         )
         self.log_text.pack(fill="both", expand=True, padx=10, pady=(0, 10))
         
-        self.log("Ready to begin", "info")
+        self.log("Ready to begin - Select mode above", "info")
         
+    def on_mode_change(self):
+        """Handle mode change"""
+        self.mode = self.mode_var.get()
+        
+        if self.mode == "full":
+            # Show full mode controls
+            self.full_mode_frame.pack(fill="x", before=self.hybrid_mode_frame)
+            self.hybrid_mode_frame.pack_forget()
+            self.log("Switched to Full Mode (API)", "info")
+        else:
+            # Show hybrid mode controls
+            self.hybrid_mode_frame.pack(fill="x", before=self.full_mode_frame)
+            self.full_mode_frame.pack_forget()
+            self.log("Switched to Hybrid Mode (UI Scraping)", "info")
+            self.log("No API authentication needed!", "success")
+    
     def log(self, message, level="info"):
         """Add message to log"""
         timestamp = datetime.now().strftime("%H:%M:%S")
@@ -244,48 +316,6 @@ class ForensicToolGUI:
         self.log_text.insert("end", formatted)
         self.log_text.see("end")
         self.root.update()
-    
-    def fuzzy_match(self, search_name, file_name, threshold=0.6):
-        """Fuzzy match file names"""
-        search_lower = search_name.lower().strip()
-        file_lower = file_name.lower().strip()
-        
-        if search_lower == file_lower:
-            return 1.0
-        if search_lower in file_lower:
-            return 0.9
-        return SequenceMatcher(None, search_lower, file_lower).ratio()
-    
-    def search_multi_files(self, search_names):
-        """Search for multiple files with fuzzy matching"""
-        self.log(f"Searching for {len(search_names)} files...")
-        
-        all_files = self.api_tool.list_files(max_results=1000)
-        matched_files = []
-        
-        for search_name in search_names:
-            best_match = None
-            best_score = 0
-            
-            for file in all_files:
-                score = self.fuzzy_match(search_name, file['name'])
-                if score > best_score:
-                    best_score = score
-                    best_match = file
-            
-            if best_match and best_score >= 0.6:
-                matched_files.append(best_match)
-                
-                if best_score == 1.0:
-                    self.log(f"  Exact: '{search_name}' -> {best_match['name']}", "success")
-                elif best_score >= 0.9:
-                    self.log(f"  Strong: '{search_name}' -> {best_match['name']}", "success")
-                else:
-                    self.log(f"  Fuzzy ({int(best_score*100)}%): '{search_name}' -> {best_match['name']}", "warning")
-            else:
-                self.log(f"  Not found: '{search_name}'", "error")
-        
-        return matched_files
     
     def load_file_list(self):
         """Load file names from text file"""
@@ -305,8 +335,8 @@ class ForensicToolGUI:
                 messagebox.showerror("Error", f"Failed to load: {e}")
     
     def authenticate(self):
-        """Authenticate with Google"""
-        self.log("Authenticating...")
+        """Authenticate with Google API (Full Mode only)"""
+        self.log("Authenticating with Google API...", "info")
         self.auth_btn.configure(state="disabled")
         
         def auth_thread():
@@ -316,7 +346,7 @@ class ForensicToolGUI:
                     self.authenticated = True
                     self.root.after(0, lambda: self.log("Authenticated successfully", "success"))
                     self.root.after(0, lambda: self.auth_status.configure(text="✓ Authenticated", text_color="green"))
-                    self.root.after(0, lambda: self.search_btn.configure(state="normal"))
+                    self.root.after(0, lambda: self.api_search_btn.configure(state="normal"))
                     
                     if self.api_tool.test_read_only_restriction():
                         self.root.after(0, lambda: self.log("Read-only access confirmed", "success"))
@@ -329,14 +359,14 @@ class ForensicToolGUI:
         
         threading.Thread(target=auth_thread, daemon=True).start()
     
-    def search_files(self):
-        """Search for files"""
+    def search_files_api(self):
+        """Search files using API (Full Mode)"""
         if not self.authenticated:
             messagebox.showerror("Error", "Authenticate first")
             return
         
-        self.log("Searching...")
-        self.search_btn.configure(state="disabled")
+        self.log("Searching via API...", "info")
+        self.api_search_btn.configure(state="disabled")
         
         def search_thread():
             try:
@@ -345,7 +375,6 @@ class ForensicToolGUI:
                 if search_type == "all":
                     max_results = int(self.max_results.get())
                     files = self.api_tool.list_files(max_results=max_results)
-                    
                 elif search_type == "date":
                     start = self.start_date.get() or "2024-01-01"
                     end = self.end_date.get() or "2024-12-31"
@@ -353,35 +382,17 @@ class ForensicToolGUI:
                         f'{start}T00:00:00',
                         f'{end}T23:59:59'
                     )
-                    
-                elif search_type == "name":
-                    name = self.search_name.get()
-                    if not name:
-                        self.root.after(0, lambda: messagebox.showerror("Error", "Enter a file name"))
-                        return
-                    query = f"name contains '{name}'"
-                    files = self.api_tool.list_files(query=query)
-                    
-                elif search_type == "multi":
-                    names_text = self.multi_names.get("1.0", "end").strip()
-                    if not names_text:
-                        self.root.after(0, lambda: messagebox.showerror("Error", "Enter file names"))
-                        return
-                    
-                    search_names = [n.strip() for n in names_text.split('\n') if n.strip()]
-                    files = self.search_multi_files(search_names)
                 else:
                     files = []
                 
                 self.files = files
                 
                 if files:
-                    # Create new session ID
+                    # Create session
                     self.current_session = datetime.now().strftime('%Y%m%d_%H%M%S')
+                    self.root.after(0, lambda: self.log(f"Session: {self.current_session}", "info"))
                     
-                    self.log(f"Session ID: {self.current_session}", "info")
-                    
-                    # Capture baseline
+                    # Capture baseline from API
                     self.baseline_metadata = []
                     for file in files:
                         detailed = self.api_tool.service.files().get(
@@ -390,39 +401,38 @@ class ForensicToolGUI:
                         ).execute()
                         self.baseline_metadata.append(detailed)
                     
-                    # Generate hash BEFORE saving
+                    # Generate hash
                     self.session_baseline_hash = self.verifier.generate_hash(self.baseline_metadata)
                     
-                    # Save with session ID and hash
+                    # Save baseline
                     baseline_path = os.path.join(
-                        self.export_dir, 
+                        self.export_dir,
                         f'session_{self.current_session}_BASELINE_BEFORE.json'
                     )
                     with open(baseline_path, 'w', encoding='utf-8') as f:
                         json.dump({
                             'session_id': self.current_session,
+                            'mode': 'full_api',
                             'capture_time': datetime.now().isoformat(),
                             'total_files': len(self.baseline_metadata),
                             'baseline_hash_sha256': self.session_baseline_hash,
-                            'search_type': search_type,
                             'files': self.baseline_metadata
                         }, f, indent=2)
                     
                     self.root.after(0, lambda: self.log(f"Found {len(files)} files", "success"))
                     self.root.after(0, lambda: self.log(f"Baseline hash: {self.session_baseline_hash}", "info"))
-                    self.root.after(0, lambda: self.log(f"Saved: session_{self.current_session}_BASELINE_BEFORE.json", "success"))
                     
-                    # Display found files
+                    # Show files
                     self.root.after(0, lambda: self.log("--- Files Found ---", "info"))
-                    for i, f in enumerate(files[:10], 1):  # Show first 10
+                    for i, f in enumerate(files[:10], 1):
                         file_name = f['name']
                         modified = f.get('modifiedTime', 'N/A')
-                        self.root.after(0, lambda i=i, name=file_name, mod=modified: 
+                        self.root.after(0, lambda i=i, name=file_name, mod=modified:
                             self.log(f"  {i}. {name} (Modified: {mod})", "info"))
                     
                     if len(files) > 10:
                         remaining = len(files) - 10
-                        self.root.after(0, lambda r=remaining: self.log(f"  ... and {r} more files", "info"))
+                        self.root.after(0, lambda r=remaining: self.log(f"  ... and {r} more", "info"))
                     
                     self.root.after(0, lambda: self.log("-------------------", "info"))
                     self.root.after(0, lambda: self.screenshot_btn.configure(state="normal"))
@@ -432,16 +442,34 @@ class ForensicToolGUI:
             except Exception as e:
                 self.root.after(0, lambda: self.log(f"Error: {e}", "error"))
             finally:
-                self.root.after(0, lambda: self.search_btn.configure(state="normal"))
+                self.root.after(0, lambda: self.api_search_btn.configure(state="normal"))
         
         threading.Thread(target=search_thread, daemon=True).start()
     
-    def start_screenshots(self):
-        """Start screenshot capture"""
-        if not self.files:
-            messagebox.showerror("Error", "No files to capture")
+    def start_hybrid_workflow(self):
+        """Start hybrid workflow (UI scraping + screenshots)"""
+        names_text = self.multi_names.get("1.0", "end").strip()
+        if not names_text:
+            messagebox.showerror("Error", "Enter file names")
             return
         
+        self.file_names = [n.strip() for n in names_text.split('\n') if n.strip()]
+        
+        self.log(f"Starting Hybrid Mode for {len(self.file_names)} files", "info")
+        self.log("Will scrape metadata from UI (no API)", "info")
+        
+        # Create session
+        self.current_session = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.log(f"Session: {self.current_session}", "info")
+        
+        # Enable screenshot button
+        self.screenshot_btn.configure(state="normal")
+        
+        self.log("Ready to capture screenshots", "success")
+        self.log("Click 'Start Screenshot Capture' to begin", "info")
+    
+    def start_screenshots(self):
+        """Start screenshot capture (works for both modes)"""
         use_profile = self.use_profile.get()
         
         if use_profile:
@@ -452,7 +480,7 @@ class ForensicToolGUI:
             if not response:
                 return
         
-        self.log("Starting screenshots...")
+        self.log("Starting screenshots...", "info")
         self.screenshot_btn.configure(state="disabled")
         self.progress.set(0)
         
@@ -479,14 +507,53 @@ class ForensicToolGUI:
                 
                 self.root.after(0, lambda: self.log("Starting capture...", "success"))
                 
-                total = len(self.files)
-                for i, file in enumerate(self.files, 1):
+                # HYBRID MODE: Scrape metadata BEFORE screenshots
+                if self.mode == "hybrid" and self.file_names:
+                    self.root.after(0, lambda: self.log("HYBRID MODE: Scraping metadata from UI...", "info"))
+                    
+                    self.ui_scraper = DriveUIScraper(self.screenshot_tool.driver)
+                    
+                    def scrape_callback(progress, file_name):
+                        self.root.after(0, lambda p=progress, f=file_name:
+                            self.log(f"Scraping {int(p*100)}%: {f}", "info"))
+                    
+                    self.baseline_metadata = self.ui_scraper.scrape_multiple_files(
+                        self.file_names,
+                        callback=scrape_callback
+                    )
+                    
+                    # Generate hash from scraped data
+                    self.session_baseline_hash = generate_hash_from_scraped_data(self.baseline_metadata)
+                    
+                    # Save baseline
+                    baseline_path = os.path.join(
+                        self.export_dir,
+                        f'session_{self.current_session}_BASELINE_BEFORE.json'
+                    )
+                    with open(baseline_path, 'w', encoding='utf-8') as f:
+                        json.dump({
+                            'session_id': self.current_session,
+                            'mode': 'hybrid_ui_scraping',
+                            'capture_time': datetime.now().isoformat(),
+                            'total_files': len(self.baseline_metadata),
+                            'baseline_hash_sha256': self.session_baseline_hash,
+                            'files': self.baseline_metadata
+                        }, f, indent=2)
+                    
+                    self.root.after(0, lambda: self.log(f"Scraped {len(self.baseline_metadata)} files", "success"))
+                    self.root.after(0, lambda: self.log(f"Baseline hash: {self.session_baseline_hash}", "info"))
+                
+                # Take screenshots (works for both modes)
+                files_to_screenshot = self.files if self.mode == "full" else [{'id': 'unknown', 'name': name} for name in self.file_names]
+                
+                total = len(files_to_screenshot)
+                for i, file in enumerate(files_to_screenshot, 1):
                     progress = i / total
                     self.root.after(0, lambda p=progress: self.progress.set(p))
                     self.root.after(0, lambda i=i, t=total: self.progress_label.configure(text=f"{i}/{t}"))
                     self.root.after(0, lambda f=file: self.log(f"Capturing: {f['name'][:40]}...", "info"))
                     
-                    self.screenshot_tool.screenshot_file_details(file['id'], file['name'])
+                    self.screenshot_tool.screenshot_file_details(file.get('id', 'unknown'), file['name'])
                 
                 self.screenshot_tool.close()
                 self.root.after(0, lambda: self.log("Screenshots complete!", "success"))
@@ -494,6 +561,8 @@ class ForensicToolGUI:
                 
             except Exception as e:
                 self.root.after(0, lambda: self.log(f"Error: {e}", "error"))
+                import traceback
+                traceback.print_exc()
             finally:
                 self.root.after(0, lambda: self.screenshot_btn.configure(state="normal"))
                 self.root.after(0, lambda: self.progress_label.configure(text=""))
@@ -518,13 +587,15 @@ class ForensicToolGUI:
             font=ctk.CTkFont(size=18, weight="bold")
         ).pack(pady=20)
         
+        mode_text = "Log in manually" if self.mode == "hybrid" else "Ensure you're logged in"
+        
         ctk.CTkLabel(
             dialog,
-            text="Please ensure:\n"
-                 "✓ Logged in to Google\n"
-                 "✓ Drive has loaded\n"
-                 "✓ You can see your files\n\n"
-                 "Click Ready when done.",
+            text=f"Please ensure:\n"
+                 f"✓ {mode_text}\n"
+                 f"✓ Drive has loaded\n"
+                 f"✓ You can see your files\n\n"
+                 f"Click Ready when done.",
             font=ctk.CTkFont(size=12)
         ).pack(pady=10)
         
@@ -540,115 +611,117 @@ class ForensicToolGUI:
         ).pack(pady=20)
     
     def verify_data(self):
-        """Verify integrity"""
-        
+        """Verify integrity (works for both modes)"""
         if not self.current_session:
-            messagebox.showerror("Error", "No active session to verify")
+            messagebox.showerror("Error", "No active session")
             return
         
-        self.log("Verifying...", "info")
         self.log(f"Verifying session: {self.current_session}", "info")
         self.verify_btn.configure(state="disabled")
         
         def verify_thread():
             try:
-                # Re-capture metadata
-                post_metadata = []
-                for file in self.files:
-                    detailed = self.api_tool.service.files().get(
-                        fileId=file['id'],
-                        fields='id,name,mimeType,createdTime,modifiedTime,viewedByMeTime,size,owners'
-                    ).execute()
-                    post_metadata.append(detailed)
+                # Re-capture metadata based on mode
+                if self.mode == "full":
+                    # API re-capture
+                    post_metadata = []
+                    for file in self.files:
+                        detailed = self.api_tool.service.files().get(
+                            fileId=file['id'],
+                            fields='id,name,mimeType,createdTime,modifiedTime,viewedByMeTime,size,owners'
+                        ).execute()
+                        post_metadata.append(detailed)
+                    
+                    session_post_hash = self.verifier.generate_hash(post_metadata)
+                else:
+                    # UI scraping re-capture
+                    self.root.after(0, lambda: self.log("Re-scraping metadata from UI...", "info"))
+                    
+                    # Open browser if needed
+                    if not self.screenshot_tool or not self.screenshot_tool.driver:
+                        self.root.after(0, lambda: self.log("Browser not available for re-scraping", "error"))
+                        return
+                    
+                    self.ui_scraper = DriveUIScraper(self.screenshot_tool.driver)
+                    post_metadata = self.ui_scraper.scrape_multiple_files(self.file_names)
+                    session_post_hash = generate_hash_from_scraped_data(post_metadata)
                 
-                # Generate post-capture hash
-                session_post_hash = self.verifier.generate_hash(post_metadata)
-                
-                # Save post-capture with session ID and hash
+                # Save post-capture
                 post_path = os.path.join(
-                    self.export_dir, 
+                    self.export_dir,
                     f'session_{self.current_session}_POST_AFTER.json'
                 )
                 with open(post_path, 'w', encoding='utf-8') as f:
                     json.dump({
                         'session_id': self.current_session,
+                        'mode': self.mode,
                         'capture_time': datetime.now().isoformat(),
                         'total_files': len(post_metadata),
                         'post_hash_sha256': session_post_hash,
                         'files': post_metadata
                     }, f, indent=2)
                 
-                # Verify hashes
+                # Verify
                 result = self.verifier.verify_no_changes(self.baseline_metadata, post_metadata)
                 
-                # Save verification report with session ID
+                # Save verification
                 verification_path = os.path.join(
-                    self.export_dir, 
+                    self.export_dir,
                     f'session_{self.current_session}_VERIFICATION.json'
                 )
                 
-                # Add hash comparison to verification report
-                verification_report = {
-                    'session_id': self.current_session,
-                    'verification_time': datetime.now().isoformat(),
-                    'baseline_hash': self.session_baseline_hash,
-                    'post_hash': session_post_hash,
-                    'hashes_match': self.session_baseline_hash == session_post_hash,
-                    'total_files': len(self.files),
-                    'verification_result': result
-                }
-                
                 with open(verification_path, 'w', encoding='utf-8') as f:
-                    json.dump(verification_report, f, indent=2)
+                    json.dump({
+                        'session_id': self.current_session,
+                        'mode': self.mode,
+                        'baseline_hash': self.session_baseline_hash,
+                        'post_hash': session_post_hash,
+                        'hashes_match': self.session_baseline_hash == session_post_hash,
+                        'verification_result': result
+                    }, f, indent=2)
                 
-                # Generate attestation
+                # Attestation
                 attestation = self.verifier.generate_attestation(result)
-                
-                # Add hash info to attestation
                 attestation_with_hashes = f"""
 SESSION: {self.current_session}
+MODE: {self.mode.upper()}
 
 HASH COMPARISON:
-  Baseline Hash (BEFORE): {self.session_baseline_hash}
-  Post Hash (AFTER):      {session_post_hash}
-  Hashes Match:           {self.session_baseline_hash == session_post_hash}
+  Baseline Hash: {self.session_baseline_hash}
+  Post Hash:     {session_post_hash}
+  Match:         {self.session_baseline_hash == session_post_hash}
 
 {attestation}
 """
                 
                 attestation_path = os.path.join(
-                    self.export_dir, 
+                    self.export_dir,
                     f'session_{self.current_session}_ATTESTATION.txt'
                 )
                 with open(attestation_path, 'w', encoding='utf-8') as f:
                     f.write(attestation_with_hashes)
                 
-                # Log results
-                self.root.after(0, lambda: self.log(f"Baseline hash: {self.session_baseline_hash}", "info"))
-                self.root.after(0, lambda: self.log(f"Post hash:     {session_post_hash}", "info"))
+                # Results
+                self.root.after(0, lambda: self.log(f"Baseline: {self.session_baseline_hash}", "info"))
+                self.root.after(0, lambda: self.log(f"Post:     {session_post_hash}", "info"))
                 
                 if result['match'] and self.session_baseline_hash == session_post_hash:
-                    self.root.after(0, lambda: self.log("VERIFICATION PASSED - Hashes match!", "success"))
-                    self.root.after(0, lambda: self.log(f"Saved: session_{self.current_session}_VERIFICATION.json", "success"))
+                    self.root.after(0, lambda: self.log("VERIFICATION PASSED!", "success"))
                     self.root.after(0, lambda: messagebox.showinfo(
                         "Success",
-                        f"Data integrity verified!\n\n"
-                        f"Session: {self.current_session}\n"
-                        f"Files: {len(self.files)}\n"
-                        f"Hash verification: PASSED\n\n"
-                        f"Baseline hash matches post-capture hash."
+                        f"Integrity verified!\n\n"
+                        f"Mode: {self.mode.upper()}\n"
+                        f"Files: {len(post_metadata)}\n"
+                        f"Hashes match: YES"
                     ))
                 else:
-                    self.root.after(0, lambda: self.log("VERIFICATION FAILED - Hashes DO NOT match!", "error"))
-                    self.root.after(0, lambda: messagebox.showwarning(
-                        "Failed",
-                        f"Hash verification FAILED\n\n"
-                        f"Session: {self.current_session}\n"
-                        f"See verification report for details."
-                    ))
+                    self.root.after(0, lambda: self.log("VERIFICATION FAILED!", "error"))
+                    self.root.after(0, lambda: messagebox.showwarning("Failed", "Hashes don't match!"))
                 
             except Exception as e:
                 self.root.after(0, lambda: self.log(f"Error: {e}", "error"))
+                import traceback
+                traceback.print_exc()
             finally:
                 self.root.after(0, lambda: self.verify_btn.configure(state="normal"))
         
@@ -657,7 +730,7 @@ HASH COMPARISON:
 
 def main():
     root = ctk.CTk()
-    app = ForensicToolGUI(root)
+    app = MultiModeForensicGUI(root)
     root.mainloop()
 
 
