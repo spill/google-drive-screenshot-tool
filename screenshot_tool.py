@@ -2,11 +2,14 @@
 """
 Screenshot Tool for Google Drive Files - MANUAL CHROMEDRIVER for Chrome 141
 Configured for Chrome version: 141.0.7390.123
+WITH DUPLICATE FILE HANDLING
 """
 
 import time
 import os
 from datetime import datetime
+import re
+from difflib import SequenceMatcher
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -32,10 +35,112 @@ def _windows_chrome_profile_dir() -> str:
     return fallback
 
 
+# ==============================================================================
+# DUPLICATE FILE HANDLING FUNCTIONS
+# ==============================================================================
+
+def parse_index_from_search(search_term: str):
+    """
+    Parse index notation from search term
+    
+    Examples:
+        "Resume [2]" → ("Resume", 2)
+        "Resume #3" → ("Resume", 3)
+        "Resume (1)" → ("Resume", 1)
+        "Resume" → ("Resume", None)
+    """
+    patterns = [r'\s*\[(\d+)\]\s*$', r'\s*#(\d+)\s*$', r'\s*\((\d+)\)\s*$']
+    
+    for pattern in patterns:
+        match = re.search(pattern, search_term)
+        if match:
+            index = int(match.group(1))
+            clean_term = re.sub(pattern, '', search_term).strip()
+            return (clean_term, index)
+    
+    return (search_term, None)
+
+
+def calculate_similarity(search_term: str, candidate: str) -> float:
+    """Calculate how similar two strings are (0.0 to 1.0)"""
+    search_lower = search_term.lower().strip()
+    candidate_lower = candidate.lower().strip()
+    
+    if search_lower == candidate_lower:
+        return 1.0
+    
+    if search_lower in candidate_lower:
+        return 0.85 + (0.15 * len(search_lower) / len(candidate_lower))
+    
+    base_similarity = SequenceMatcher(None, search_lower, candidate_lower).ratio()
+    
+    search_words = set(search_lower.split())
+    candidate_words = set(candidate_lower.split())
+    word_overlap = len(search_words & candidate_words) / max(len(search_words), 1)
+    
+    return (base_similarity * 0.7) + (word_overlap * 0.3)
+
+
+def find_best_match(search_term: str, candidates: list, threshold=0.6):
+    """
+    Find best matching file with duplicate detection
+    
+    Args:
+        search_term: What to search for (can include [2] notation)
+        candidates: List of (name, element) tuples
+        threshold: Minimum similarity (0.6 = 60%)
+    
+    Returns:
+        (selected_element, score, reason, match_name) or (None, 0, "Not found", None)
+    """
+    if not candidates:
+        return (None, 0, "No candidates", None)
+    
+    # Parse index notation
+    clean_search, requested_index = parse_index_from_search(search_term)
+    
+    # Calculate scores
+    scored = []
+    for name, elem in candidates:
+        score = calculate_similarity(clean_search, name)
+        if score >= threshold:
+            scored.append((name, elem, score))
+    
+    if not scored:
+        return (None, 0, f"No matches above {threshold:.0%}", None)
+    
+    # Sort by score
+    scored.sort(key=lambda x: x[2], reverse=True)
+    
+    # Check for duplicates
+    has_duplicates = len([s for s in scored if s[2] >= scored[0][2] - 0.05]) > 1
+    
+    if has_duplicates and not requested_index:
+        print(f"  ⚠️  WARNING: {len(scored)} similar files found!")
+        print(f"  💡 Use index notation: '{clean_search} [2]' to pick specific file")
+        for i, (name, _, score) in enumerate(scored[:5], 1):
+            print(f"     {i}. {name} ({score:.0%})")
+    
+    # Select file
+    if requested_index and 1 <= requested_index <= len(scored):
+        name, elem, score = scored[requested_index - 1]
+        reason = f"Selected by index #{requested_index}"
+    else:
+        name, elem, score = scored[0]
+        reason = "Highest similarity" + (" (duplicates exist!)" if has_duplicates else "")
+    
+    return (elem, score, reason, name)
+
+
+# ==============================================================================
+# MAIN SCREENSHOT TOOL CLASS
+# ==============================================================================
+
 class DriveScreenshotTool:
-    def __init__(self, screenshot_dir='screenshots'):
+    def __init__(self, screenshot_dir='screenshots', case_prefix=''):
         """Initialize screenshot tool"""
         self.screenshot_dir = screenshot_dir
+        self.case_prefix = case_prefix  # For case code prefixing
         os.makedirs(screenshot_dir, exist_ok=True)
         self.driver = None
         self.details_pane_open = False
@@ -197,74 +302,62 @@ class DriveScreenshotTool:
             return True
 
     def click_file_to_populate_details(self, file_name: str) -> bool:
-        """LEFT CLICK file to populate details pane"""
+        """
+        LEFT CLICK file to populate details pane - WITH FUZZY MATCHING & DUPLICATE DETECTION
+        """
         print("  Finding and clicking file...")
 
         try:
-            target = None
-
-            # Method 1: data-tooltip
-            for elem in self.driver.find_elements(By.CSS_SELECTOR, '[data-tooltip]'):
+            # Collect all potential file elements
+            all_elements = []
+            for selector in ['[data-tooltip]', '[aria-label]', 'div[role="button"]', 'div[role="listitem"]']:
                 try:
-                    tooltip = elem.get_attribute('data-tooltip')
-                    if tooltip and file_name.lower() in tooltip.lower():
-                        target = elem
-                        print(f"  ✓ Found file via tooltip")
-                        break
-                except:
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    all_elements.extend(elements)
+                except Exception:
                     continue
-
-            # Method 2: aria-label
-            if not target:
-                for elem in self.driver.find_elements(By.CSS_SELECTOR, '[aria-label]'):
-                    try:
+            
+            print(f"  Found {len(all_elements)} potential elements")
+            
+            # Extract candidates (name, element pairs)
+            candidates = []
+            for elem in all_elements:
+                try:
+                    name = None
+                    
+                    # Try different attributes
+                    tooltip = elem.get_attribute('data-tooltip')
+                    if tooltip and len(tooltip) > 0:
+                        name = tooltip
+                    
+                    if not name:
                         label = elem.get_attribute('aria-label')
-                        if label and file_name.lower() in label.lower():
-                            target = elem
-                            print(f"  ✓ Found file via aria-label")
-                            break
-                    except:
-                        continue
-
-            # Method 3: Text content
+                        if label and len(label) > 0:
+                            name = label
+                    
+                    if not name:
+                        text = elem.text.strip()
+                        if text and len(text) > 0 and len(text) < 200:
+                            name = text
+                    
+                    if name:
+                        candidates.append((name, elem))
+                except Exception:
+                    continue
+            
+            print(f"  Extracted {len(candidates)} file names")
+            
+            # Find best match with duplicate detection
+            target, score, reason, match_name = find_best_match(file_name, candidates, threshold=0.6)
+            
             if not target:
-                search_text = file_name[:30].replace("'", "\\'")
-                for elem in self.driver.find_elements(By.XPATH, f"//*[contains(text(), '{search_text}')]"):
-                    try:
-                        for xpath in ["./ancestor::div[@role='button'][1]", "./ancestor::div[@role='listitem'][1]", "./..", "./../../.."]:
-                            try:
-                                parent = elem.find_element(By.XPATH, xpath)
-                                if parent.is_displayed() and parent.size['height'] > 20:
-                                    target = parent
-                                    print("  ✓ Found file via text")
-                                    break
-                            except:
-                                continue
-                        if target:
-                            break
-                    except:
-                        continue
-
-            # Method 4: JavaScript
-            if not target:
-                search_js = file_name[:30].replace("'", "\\'").lower()
-                target = self.driver.execute_script(f"""
-                    let selectors = ['[data-tooltip]', '[aria-label]', 'div[role="button"]', 'div[role="listitem"]'];
-                    for (let sel of selectors) {{
-                        for (let elem of document.querySelectorAll(sel)) {{
-                            let text = (elem.innerText || elem.getAttribute('data-tooltip') || elem.getAttribute('aria-label') || '').toLowerCase();
-                            if (text.includes('{search_js}') && elem.offsetParent) return elem;
-                        }}
-                    }}
-                    return null;
-                """)
-                if target:
-                    print("  ✓ Found file via JavaScript")
-
-            if not target:
-                print("  ❌ Could not find file element")
+                print(f"  ✗ {reason}")
                 return False
-
+            
+            print(f"  ✓ Matched: '{match_name}'")
+            print(f"  Similarity: {score:.0%}")
+            print(f"  Reason: {reason}")
+            
             # Scroll into view
             self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", target)
             time.sleep(1)
@@ -349,7 +442,7 @@ class DriveScreenshotTool:
 
     def screenshot_file_details(self, file_id: str, file_name: str) -> list:
         """
-        Capture 2 screenshots with 33% zoom:
+        Capture 2 screenshots with 50% zoom:
         1) Details tab
         2) Activity tab
         """
@@ -384,13 +477,13 @@ class DriveScreenshotTool:
             print("\n  Ensuring Details tab is active...")
             self._ensure_tab("Details")
 
-            # Create folder
+            # Create folder with case prefix
             safe_filename = "".join(c for c in file_name if c.isalnum() or c in (' ', '_', '-')).strip() or "file"
-            file_folder = os.path.join(self.screenshot_dir, safe_filename)
+            file_folder = os.path.join(self.screenshot_dir, f"{self.case_prefix}{safe_filename}")
             os.makedirs(file_folder, exist_ok=True)
             print(f"  ✓ Using folder: {file_folder}")
 
-            # Zoom to 33%
+            # Zoom to 50%
             print("\n  📷 Setting zoom to 50%...")
             try:
                 self.driver.execute_script("document.body.style.zoom='0.50'")
@@ -402,7 +495,7 @@ class DriveScreenshotTool:
             # Screenshot 1: Details
             print("\n  [1/2] Capturing Details tab...")
             ts1 = datetime.now().strftime('%Y%m%d_%H%M%S')
-            p1 = os.path.join(file_folder, f"{ts1}_{safe_filename}.1.png")
+            p1 = os.path.join(file_folder, f"{self.case_prefix}{ts1}_{safe_filename}.1.png")
             self.driver.save_screenshot(p1)
             print(f"  ✓ Saved: {os.path.basename(p1)}")
             screenshot_paths.append(p1)
@@ -416,7 +509,7 @@ class DriveScreenshotTool:
             # Screenshot 2: Activity
             print("\n  Capturing Activity tab...")
             ts2 = datetime.now().strftime('%Y%m%d_%H%M%S')
-            p2 = os.path.join(file_folder, f"{ts2}_{safe_filename}.2.png")
+            p2 = os.path.join(file_folder, f"{self.case_prefix}{ts2}_{safe_filename}.2.png")
             self.driver.save_screenshot(p2)
             print(f"  ✓ Saved: {os.path.basename(p2)}")
             screenshot_paths.append(p2)

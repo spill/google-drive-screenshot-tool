@@ -2,15 +2,96 @@
 """
 UI Metadata Scraper for Google Drive
 Scrapes metadata from Drive's web interface (no API needed)
+WITH DUPLICATE FILE HANDLING
 """
 
 import time
 import json
 from datetime import datetime
+import re
+from difflib import SequenceMatcher
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
+# ==============================================================================
+# DUPLICATE FILE HANDLING FUNCTIONS (same as screenshot_tool.py)
+# ==============================================================================
+
+def parse_index_from_search(search_term: str):
+    """Parse index notation from search term"""
+    patterns = [r'\s*\[(\d+)\]\s*$', r'\s*#(\d+)\s*$', r'\s*\((\d+)\)\s*$']
+    
+    for pattern in patterns:
+        match = re.search(pattern, search_term)
+        if match:
+            index = int(match.group(1))
+            clean_term = re.sub(pattern, '', search_term).strip()
+            return (clean_term, index)
+    
+    return (search_term, None)
+
+
+def calculate_similarity(search_term: str, candidate: str) -> float:
+    """Calculate how similar two strings are (0.0 to 1.0)"""
+    search_lower = search_term.lower().strip()
+    candidate_lower = candidate.lower().strip()
+    
+    if search_lower == candidate_lower:
+        return 1.0
+    
+    if search_lower in candidate_lower:
+        return 0.85 + (0.15 * len(search_lower) / len(candidate_lower))
+    
+    base_similarity = SequenceMatcher(None, search_lower, candidate_lower).ratio()
+    
+    search_words = set(search_lower.split())
+    candidate_words = set(candidate_lower.split())
+    word_overlap = len(search_words & candidate_words) / max(len(search_words), 1)
+    
+    return (base_similarity * 0.7) + (word_overlap * 0.3)
+
+
+def find_best_match(search_term: str, candidates: list, threshold=0.6):
+    """Find best matching file with duplicate detection"""
+    if not candidates:
+        return (None, 0, "No candidates", None)
+    
+    clean_search, requested_index = parse_index_from_search(search_term)
+    
+    scored = []
+    for name, elem in candidates:
+        score = calculate_similarity(clean_search, name)
+        if score >= threshold:
+            scored.append((name, elem, score))
+    
+    if not scored:
+        return (None, 0, f"No matches above {threshold:.0%}", None)
+    
+    scored.sort(key=lambda x: x[2], reverse=True)
+    
+    has_duplicates = len([s for s in scored if s[2] >= scored[0][2] - 0.05]) > 1
+    
+    if has_duplicates and not requested_index:
+        print(f"  ⚠️  WARNING: {len(scored)} similar files found!")
+        print(f"  💡 Use index notation: '{clean_search} [2]' to pick specific file")
+        for i, (name, _, score) in enumerate(scored[:5], 1):
+            print(f"     {i}. {name} ({score:.0%})")
+    
+    if requested_index and 1 <= requested_index <= len(scored):
+        name, elem, score = scored[requested_index - 1]
+        reason = f"Selected by index #{requested_index}"
+    else:
+        name, elem, score = scored[0]
+        reason = "Highest similarity" + (" (duplicates exist!)" if has_duplicates else "")
+    
+    return (elem, score, reason, name)
+
+
+# ==============================================================================
+# MAIN UI SCRAPER CLASS
+# ==============================================================================
 
 class DriveUIScraper:
     """
@@ -59,7 +140,7 @@ class DriveUIScraper:
     
     def open_details_panel_ui(self, file_name):
         """
-        Open the details panel for a file - FIND FILE FIRST, THEN RIGHT-CLICK
+        Open the details panel for a file - WITH FUZZY MATCHING & DUPLICATE DETECTION
         
         Args:
             file_name: Name of file
@@ -76,87 +157,74 @@ class DriveUIScraper:
             # Wait for search results to load
             time.sleep(3)
             
-            # STEP 1: FIND THE FILE using multiple methods
-            target = None
-            
-            # Method 1: data-tooltip attribute
-            print(f"  Searching for file (method 1: tooltip)...")
-            file_elements = self.driver.find_elements(By.CSS_SELECTOR, '[data-tooltip]')
-            for elem in file_elements:
-                tooltip = elem.get_attribute('data-tooltip')
-                if tooltip and file_name.lower() in tooltip.lower():
-                    target = elem
-                    print(f"  ✓ Found via tooltip: {tooltip}")
-                    break
-            
-            # Method 2: aria-label attribute
-            if not target:
-                print(f"  Searching for file (method 2: aria-label)...")
-                file_elements = self.driver.find_elements(By.CSS_SELECTOR, '[aria-label]')
-                for elem in file_elements:
-                    label = elem.get_attribute('aria-label')
-                    if label and file_name.lower() in label.lower():
-                        target = elem
-                        print(f"  ✓ Found via aria-label: {label}")
-                        break
-            
-            # Method 3: Text content in clickable elements
-            if not target:
-                print(f"  Searching for file (method 3: text content)...")
+            # Collect all potential file elements
+            all_elements = []
+            for selector in ['[data-tooltip]', '[aria-label]', 'div[role="button"]', 'div[role="listitem"]']:
                 try:
-                    search_text = file_name[:30] if len(file_name) > 30 else file_name
-                    file_elements = self.driver.find_elements(By.XPATH, f"//*[contains(text(), '{search_text}')]")
-                    for elem in file_elements:
-                        tag = elem.tag_name.lower()
-                        role = elem.get_attribute('role')
-                        if tag in ['div', 'button', 'a'] or role in ['button', 'listitem', 'link']:
-                            target = elem
-                            print(f"  ✓ Found via text content ({tag})")
-                            break
-                except:
-                    pass
-            
-            if not target:
-                print(f"  ✗ Could not find file using any method")
-                return False
-            
-            # STEP 2: CLICK TO SELECT THE FILE
-            print(f"  Selecting file...")
-            clicked = False
-            
-            click_methods = [
-                ("direct click", lambda: target.click()),
-                ("ActionChains", lambda: ActionChains(self.driver).move_to_element(target).click().perform()),
-                ("JavaScript", lambda: self.driver.execute_script("arguments[0].click();", target)),
-                ("scroll + click", lambda: (self.driver.execute_script("arguments[0].scrollIntoView(true);", target), time.sleep(0.5), target.click())),
-            ]
-            
-            for method_name, click_func in click_methods:
-                try:
-                    click_func()
-                    time.sleep(1.5)
-                    print(f"  ✓ File selected ({method_name})")
-                    clicked = True
-                    break
-                except Exception as e:
-                    print(f"  {method_name} failed: {str(e)[:50]}")
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    all_elements.extend(elements)
+                except Exception:
                     continue
             
-            if not clicked:
-                print(f"  ✗ Could not click file with any method")
+            print(f"  Found {len(all_elements)} potential elements")
+            
+            # Extract candidates
+            candidates = []
+            for elem in all_elements:
+                try:
+                    name = None
+                    
+                    tooltip = elem.get_attribute('data-tooltip')
+                    if tooltip and len(tooltip) > 0:
+                        name = tooltip
+                    
+                    if not name:
+                        label = elem.get_attribute('aria-label')
+                        if label and len(label) > 0:
+                            name = label
+                    
+                    if not name:
+                        text = elem.text.strip()
+                        if text and len(text) > 0 and len(text) < 200:
+                            name = text
+                    
+                    if name:
+                        candidates.append((name, elem))
+                except Exception:
+                    continue
+            
+            print(f"  Extracted {len(candidates)} file names")
+            
+            # Find best match with duplicate detection
+            target, score, reason, match_name = find_best_match(file_name, candidates, threshold=0.6)
+            
+            if not target:
+                print(f"  ✗ {reason}")
                 return False
             
-            # STEP 3: RIGHT-CLICK AND CLICK "FILE INFORMATION"
-            print(f"  Opening details pane via right-click...")
-            actions = ActionChains(self.driver)
+            print(f"  ✓ Matched: '{match_name}'")
+            print(f"  Similarity: {score:.0%}")
+            print(f"  Reason: {reason}")
             
-            # Right-click on the selected file
+            # Click to select
+            try:
+                self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", target)
+                time.sleep(1)
+                target.click()
+                time.sleep(1.5)
+                print(f"  ✓ File selected")
+            except Exception as e:
+                print(f"  Click failed: {e}")
+                return False
+            
+            # Right-click and open details
+            actions = ActionChains(self.driver)
             actions.context_click(target).perform()
             time.sleep(2)
             
             # Click "File information" from context menu
             detail_opened = False
-            for option in ["File information", "View details", "Details", "Show details", "Open details panel"]:
+            for option in ["File information", "View details", "Details", "Show details"]:
                 try:
                     detail_option = self.driver.find_element(By.XPATH, f"//*[contains(text(), '{option}')]")
                     detail_option.click()
@@ -171,9 +239,8 @@ class DriveUIScraper:
                 print(f"  ✓ Details pane opened")
                 return True
             else:
-                print(f"  ✗ Could not find 'File information' in context menu")
                 # Try Alt+Right as backup
-                print(f"  Trying Alt + Right Arrow as backup...")
+                print(f"  Trying keyboard shortcut...")
                 actions.send_keys(Keys.ESCAPE).perform()
                 time.sleep(1)
                 actions = ActionChains(self.driver)

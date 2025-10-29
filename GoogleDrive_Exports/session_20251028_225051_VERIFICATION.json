@@ -1,0 +1,95 @@
+{
+  "session_id": "20251028_225051",
+  "baseline_hash": "f1d0a3f998016bd890557a787c1366dfdf8061f5781519520354961bb63e0eb7",
+  "post_hash": "91d0d4749e0e451d25863be6b736ff26296a71c0464b60887ccaf7e7e1779e6b",
+  "hashes_match": false,
+  "verification_result": {
+    "timestamp": "2025-10-28T22:51:11.094821",
+    "before_hash": "f1d0a3f998016bd890557a787c1366dfdf8061f5781519520354961bb63e0eb7",
+    "after_hash": "91d0d4749e0e451d25863be6b736ff26296a71c0464b60887ccaf7e7e1779e6b",
+    "match": false,
+    "total_files": 10,
+    "file_details": [
+      {
+        "file_id": "1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0",
+        "file_name": "CPSC491.03_Progress Check-in Meeting Booking Form",
+        "before_hash": "2cf983705333a57ad174bcbdfdb6a96cb08bbb4dfc7a584ae10637cbb55d92b2",
+        "after_hash": "2cf983705333a57ad174bcbdfdb6a96cb08bbb4dfc7a584ae10637cbb55d92b2",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg",
+        "file_name": "CPSC 491.03 - Projects Check-list",
+        "before_hash": "30de86777e4a69b6ed38490d0af6937a1680cbafd30f2b86070e9f37dc6cd2dd",
+        "after_hash": "30de86777e4a69b6ed38490d0af6937a1680cbafd30f2b86070e9f37dc6cd2dd",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1dZ9xS2175TM2I0u5WJpw9smYQtvKRieWDQgC3Qqls3M",
+        "file_name": "CPSC 458 - Fall 2025 - Additional Malware Analysis Resources",
+        "before_hash": "124d7925475e534504df26e810bd23ccf3bf9cec7517874c9a575f893709a0d0",
+        "after_hash": "124d7925475e534504df26e810bd23ccf3bf9cec7517874c9a575f893709a0d0",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1a1Od70m63F5I-VcPOVmoPt5mYzcM6KOjMom-pDjmuOk",
+        "file_name": "Ryan_Trinh.Resume",
+        "before_hash": "73e60ca086b07a6967917e4a5e9e5110cde6c4d46bc39c38750bf1c28436638e",
+        "after_hash": "73e60ca086b07a6967917e4a5e9e5110cde6c4d46bc39c38750bf1c28436638e",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1U8zjRTJKK9kuVOMZbz5NZlgZJm1VdPlGa2Ks5Si_Rlk",
+        "file_name": "2025 Collaborative Slides Ethics Project",
+        "before_hash": "73711d5011cb876ad0506e74c91f9ac652bac766143fd4a62776b8421e4c3b5b",
+        "after_hash": "73711d5011cb876ad0506e74c91f9ac652bac766143fd4a62776b8421e4c3b5b",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1MjCF675mtwAr2CQAp2qpyGLkiKlCI5FuFm7R7gTx44o",
+        "file_name": "// Program: Array Management System",
+        "before_hash": "a55efa39eb2015b7c9ba7ff61387bef419151e2efb841a1f8ff27eaa7088a35b",
+        "after_hash": "a55efa39eb2015b7c9ba7ff61387bef419151e2efb841a1f8ff27eaa7088a35b",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1aCwvKY4OqWKqOAvGTdBxRdCBQStejAYA",
+        "file_name": "CPSC 491.03 Syllabus.docx",
+        "before_hash": "e7a83bca687f1ef5ab680533bc75eeec6d59fd3ab23457f9ec78b4b74be4040d",
+        "after_hash": "e7a83bca687f1ef5ab680533bc75eeec6d59fd3ab23457f9ec78b4b74be4040d",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1CFt1CrPvqhTpmtES24_kThzZyxQ49T88",
+        "file_name": "2025fall240assignment1.odt",
+        "before_hash": "5f971a04ceca88a969558c3d4786303cb3db6b51f5f391cf0f538bf3097292da",
+        "after_hash": "5f971a04ceca88a969558c3d4786303cb3db6b51f5f391cf0f538bf3097292da",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk",
+        "file_name": "CPSC 491.03 Weekly Schedule",
+        "before_hash": "1f65d28325ccde856ec607bd2319efe26db07c8cb6b771cfb9d723db43deb347",
+        "after_hash": "1f65d28325ccde856ec607bd2319efe26db07c8cb6b771cfb9d723db43deb347",
+        "timestamps_match": true,
+        "changes": null
+      },
+      {
+        "file_id": "1BHWVEJchW4nqc4P9ay4tV_HKud_SW44p",
+        "file_name": "Lecture 2 - IP_And_Routing.pptx",
+        "before_hash": "87c6dc725872cd0228662e42c59af50c042c58fb0e91a8ffcff4568ea6331110",
+        "after_hash": "87c6dc725872cd0228662e42c59af50c042c58fb0e91a8ffcff4568ea6331110",
+        "timestamps_match": true,
+        "changes": null
+      }
+    ]
+  }
+}
