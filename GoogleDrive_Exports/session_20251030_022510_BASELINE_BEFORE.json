@@ -1,0 +1,2229 @@
+{
+  "session_id": "20251030_022510",
+  "mode": "full_api_comprehensive",
+  "search_type": "name",
+  "capture_time": "2025-10-30T02:25:10.145486",
+  "total_files": 4,
+  "baseline_hash_sha256": "851482ac0ab56868a7c643350f59acb4af2671c6112c5700097d81e63db0b72a",
+  "files": [
+    {
+      "file_id": "1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0",
+      "file_name": "CPSC491.03_Progress Check-in Meeting Booking Form",
+      "fetch_time": "2025-10-30T02:25:02.136998",
+      "metadata": {
+        "id": "1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0",
+        "name": "CPSC491.03_Progress Check-in Meeting Booking Form",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "starred": false,
+        "trashed": false,
+        "explicitlyTrashed": false,
+        "spaces": [
+          "drive"
+        ],
+        "version": "527",
+        "webViewLink": "https://docs.google.com/spreadsheets/d/1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0/edit?usp=drivesdk",
+        "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.spreadsheet",
+        "hasThumbnail": true,
+        "thumbnailLink": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN_flmfGGuNQvwNydI6__0UqEwQm6FLEdyAPs8a1jV-y6VIIVLM8Lhb9Jzva5oA5Omk1ct5t8Ik1We5YI2ljz2v67oD9vptL2fo0qk2EnsXBESyH94wBL2fndH1=s220",
+        "thumbnailVersion": "91",
+        "viewedByMe": true,
+        "viewedByMeTime": "2025-10-30T07:31:22.700Z",
+        "createdTime": "2025-08-25T06:00:21.746Z",
+        "modifiedTime": "2025-10-28T01:23:23.806Z",
+        "modifiedByMe": false,
+        "sharedWithMeTime": "2025-09-23T00:01:19.785Z",
+        "owners": [
+          {
+            "kind": "drive#user",
+            "displayName": "rong.jin",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "emailAddress": "rong.jin@fullerton.edu"
+          }
+        ],
+        "lastModifyingUser": {
+          "kind": "drive#user",
+          "displayName": "rong.jin",
+          "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+          "me": false,
+          "permissionId": "00155290359368544233",
+          "emailAddress": "rong.jin@fullerton.edu"
+        },
+        "shared": true,
+        "ownedByMe": false,
+        "capabilities": {
+          "canAcceptOwnership": false,
+          "canAddChildren": false,
+          "canAddMyDriveParent": false,
+          "canChangeCopyRequiresWriterPermission": false,
+          "canChangeItemDownloadRestriction": false,
+          "canChangeSecurityUpdateEnabled": false,
+          "canChangeViewersCanCopyContent": false,
+          "canComment": true,
+          "canCopy": true,
+          "canDelete": false,
+          "canDisableInheritedPermissions": false,
+          "canDownload": true,
+          "canEdit": true,
+          "canEnableInheritedPermissions": true,
+          "canListChildren": false,
+          "canModifyContent": true,
+          "canModifyContentRestriction": true,
+          "canModifyEditorContentRestriction": true,
+          "canModifyOwnerContentRestriction": false,
+          "canModifyLabels": false,
+          "canMoveChildrenWithinDrive": false,
+          "canMoveItemIntoTeamDrive": false,
+          "canMoveItemOutOfDrive": false,
+          "canMoveItemWithinDrive": true,
+          "canReadLabels": false,
+          "canReadRevisions": true,
+          "canRemoveChildren": false,
+          "canRemoveContentRestriction": false,
+          "canRemoveMyDriveParent": true,
+          "canRename": true,
+          "canShare": true,
+          "canTrash": false,
+          "canUntrash": false
+        },
+        "viewersCanCopyContent": true,
+        "copyRequiresWriterPermission": false,
+        "writersCanShare": true,
+        "permissions": [
+          {
+            "kind": "drive#permission",
+            "id": "anyoneWithLink",
+            "type": "anyone",
+            "role": "writer",
+            "allowFileDiscovery": false,
+            "permissionDetails": [
+              {
+                "permissionType": "file",
+                "role": "writer",
+                "inherited": false
+              }
+            ]
+          },
+          {
+            "kind": "drive#permission",
+            "id": "00155290359368544233",
+            "type": "user",
+            "emailAddress": "rong.jin@fullerton.edu",
+            "role": "owner",
+            "displayName": "rong.jin",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+            "permissionDetails": [
+              {
+                "permissionType": "file",
+                "role": "owner",
+                "inherited": false
+              },
+              {
+                "permissionType": "file",
+                "role": "writer",
+                "inherited": true
+              }
+            ],
+            "deleted": false,
+            "pendingOwner": false
+          }
+        ],
+        "permissionIds": [
+          "anyoneWithLink",
+          "00155290359368544233"
+        ],
+        "size": "8949",
+        "quotaBytesUsed": "8949",
+        "isAppAuthorized": false,
+        "exportLinks": {
+          "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=ods",
+          "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=tsv",
+          "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=pdf",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=xlsx",
+          "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=csv",
+          "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=zip",
+          "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&exportFormat=ods"
+        },
+        "linkShareMetadata": {
+          "securityUpdateEligible": false,
+          "securityUpdateEnabled": false
+        }
+      },
+      "revisions": [
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=1&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "1",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T06:00:22.992Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=56&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "56",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T09:05:28.536Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=181&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "181",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T02:39:31.977Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=234&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "234",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T04:09:43.846Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=244&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "244",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T04:59:12.749Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=248&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "248",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T05:47:41.896Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=266&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "266",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T20:14:29.056Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=269&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "269",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T21:08:41.848Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=273&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "273",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T23:09:14.479Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=278&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "278",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-23T00:27:04.215Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=280&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "280",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-23T01:22:27.455Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=282&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "282",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-28T20:20:12.052Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=285&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "285",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-29T18:49:04.135Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=291&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "291",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-06T19:19:07.974Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=292&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "292",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-06T23:10:55.414Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=294&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "294",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-13T04:27:53.963Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=297&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "297",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-13T21:15:39.423Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=298&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "298",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-14T00:44:41.370Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=299&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "299",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-14T05:01:30.127Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=301&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "301",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-16T20:38:15.945Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=303&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "303",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-17T00:20:37.753Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=306&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "306",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-20T23:32:19.144Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=307&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "307",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-21T00:43:06.684Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=310&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "310",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-22T17:49:35.887Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=314&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "314",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-23T20:19:31.496Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=315&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "315",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-27T18:54:16.174Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=316&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "316",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-27T23:43:21.446Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=317&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "317",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-28T00:50:34.502Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1rAMvQmfGT9cTwOFGqWjqQziXBN8uOJXyi3vx4qVlEp0&revision=318&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "318",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-28T01:23:23.732Z",
+          "published": false
+        }
+      ],
+      "revision_count": 29,
+      "comments": [],
+      "comment_count": 0,
+      "permissions": [
+        {
+          "permissionDetails": [
+            {
+              "permissionType": "file",
+              "role": "writer",
+              "inherited": false
+            }
+          ],
+          "kind": "drive#permission",
+          "id": "anyoneWithLink",
+          "type": "anyone",
+          "role": "writer",
+          "allowFileDiscovery": false
+        },
+        {
+          "permissionDetails": [
+            {
+              "permissionType": "file",
+              "role": "owner",
+              "inherited": false
+            },
+            {
+              "permissionType": "file",
+              "role": "writer",
+              "inherited": true
+            }
+          ],
+          "kind": "drive#permission",
+          "id": "00155290359368544233",
+          "type": "user",
+          "emailAddress": "rong.jin@fullerton.edu",
+          "role": "owner",
+          "displayName": "rong.jin",
+          "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+          "deleted": false,
+          "pendingOwner": false
+        }
+      ],
+      "permission_count": 2
+    },
+    {
+      "file_id": "1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg",
+      "file_name": "CPSC 491.03 - Projects Check-list",
+      "fetch_time": "2025-10-30T02:25:04.874724",
+      "metadata": {
+        "id": "1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg",
+        "name": "CPSC 491.03 - Projects Check-list",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "starred": false,
+        "trashed": false,
+        "explicitlyTrashed": false,
+        "spaces": [
+          "drive"
+        ],
+        "version": "555",
+        "webViewLink": "https://docs.google.com/spreadsheets/d/1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg/edit?usp=drivesdk",
+        "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.spreadsheet",
+        "hasThumbnail": true,
+        "thumbnailLink": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN72MX4cx_i5ZqxyhKiYX8QxwRW-fhUaz8mmaRZNpiHLDozLb1w5NnMdbgVFphvD8bftBh_V7l9mVb05zNdDE_2JAhpKTEb4cjD8VMMtSYHenv61N-BlQjXVOjbztw=s220",
+        "thumbnailVersion": "134",
+        "viewedByMe": true,
+        "viewedByMeTime": "2025-08-26T00:02:52.262Z",
+        "createdTime": "2025-08-25T06:00:43.844Z",
+        "modifiedTime": "2025-10-21T00:00:22.826Z",
+        "modifiedByMe": false,
+        "sharedWithMeTime": "2025-08-25T23:51:15.879Z",
+        "owners": [
+          {
+            "kind": "drive#user",
+            "displayName": "rong.jin",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "emailAddress": "rong.jin@fullerton.edu"
+          }
+        ],
+        "shared": true,
+        "ownedByMe": false,
+        "capabilities": {
+          "canAcceptOwnership": false,
+          "canAddChildren": false,
+          "canAddMyDriveParent": false,
+          "canChangeCopyRequiresWriterPermission": false,
+          "canChangeItemDownloadRestriction": false,
+          "canChangeSecurityUpdateEnabled": false,
+          "canChangeViewersCanCopyContent": false,
+          "canComment": true,
+          "canCopy": true,
+          "canDelete": false,
+          "canDisableInheritedPermissions": false,
+          "canDownload": true,
+          "canEdit": true,
+          "canEnableInheritedPermissions": true,
+          "canListChildren": false,
+          "canModifyContent": true,
+          "canModifyContentRestriction": true,
+          "canModifyEditorContentRestriction": true,
+          "canModifyOwnerContentRestriction": false,
+          "canModifyLabels": false,
+          "canMoveChildrenWithinDrive": false,
+          "canMoveItemIntoTeamDrive": false,
+          "canMoveItemOutOfDrive": false,
+          "canMoveItemWithinDrive": true,
+          "canReadLabels": false,
+          "canReadRevisions": true,
+          "canRemoveChildren": false,
+          "canRemoveContentRestriction": false,
+          "canRemoveMyDriveParent": true,
+          "canRename": true,
+          "canShare": true,
+          "canTrash": false,
+          "canUntrash": false
+        },
+        "viewersCanCopyContent": true,
+        "copyRequiresWriterPermission": false,
+        "writersCanShare": true,
+        "permissions": [
+          {
+            "kind": "drive#permission",
+            "id": "anyoneWithLink",
+            "type": "anyone",
+            "role": "writer",
+            "allowFileDiscovery": false,
+            "permissionDetails": [
+              {
+                "permissionType": "file",
+                "role": "writer",
+                "inherited": false
+              }
+            ]
+          },
+          {
+            "kind": "drive#permission",
+            "id": "00155290359368544233",
+            "type": "user",
+            "emailAddress": "rong.jin@fullerton.edu",
+            "role": "owner",
+            "displayName": "rong.jin",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+            "permissionDetails": [
+              {
+                "permissionType": "file",
+                "role": "owner",
+                "inherited": false
+              },
+              {
+                "permissionType": "file",
+                "role": "writer",
+                "inherited": true
+              }
+            ],
+            "deleted": false,
+            "pendingOwner": false
+          }
+        ],
+        "permissionIds": [
+          "anyoneWithLink",
+          "00155290359368544233"
+        ],
+        "size": "4329",
+        "quotaBytesUsed": "4329",
+        "isAppAuthorized": false,
+        "exportLinks": {
+          "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=ods",
+          "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=tsv",
+          "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=pdf",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=xlsx",
+          "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=csv",
+          "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=zip",
+          "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&exportFormat=ods"
+        },
+        "linkShareMetadata": {
+          "securityUpdateEligible": false,
+          "securityUpdateEnabled": false
+        }
+      },
+      "revisions": [
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=1&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "1",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T06:00:45.245Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=40&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "40",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T08:14:05.021Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=51&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "51",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T19:18:35.867Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=53&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "53",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T20:17:57.715Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=54&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "54",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-25T23:50:26.395Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=61&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "61",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-26T00:28:07.225Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=62&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "62",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-27T18:26:01.794Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=63&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "63",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-30T02:23:26.779Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=64&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "64",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-30T02:24:06.812Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=67&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "67",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-08-30T02:24:26.481Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=72&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "72",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-04T18:48:13.293Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=90&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "90",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-07T03:45:19.009Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=100&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "100",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-08T21:42:11.988Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=184&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "184",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-09T00:40:46.508Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=189&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "189",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-09T19:50:22.206Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=210&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "210",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-10T01:26:01.826Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=213&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "213",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-10T08:08:00.428Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=214&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "214",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-10T18:16:07.962Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=226&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "226",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-11T00:03:11.404Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=236&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "236",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-11T00:45:36.380Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=237&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "237",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-11T01:58:30.146Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=240&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "240",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-11T17:26:19.054Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=262&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "262",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-12T20:53:26.172Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=263&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "263",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-13T18:51:56.419Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=268&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "268",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-13T19:47:58.048Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=269&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "269",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-15T01:57:58.243Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=270&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "270",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-15T05:32:10.170Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=282&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "282",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-15T20:14:15.370Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=283&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "283",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-15T20:51:05.398Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=342&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "342",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-15T23:24:42.017Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=348&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "348",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-16T00:16:53.066Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=352&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "352",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-16T01:06:31.825Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=361&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "361",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-16T23:58:50.250Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=362&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "362",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-17T00:43:40.690Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=363&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "363",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-19T04:53:09.231Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=364&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "364",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-19T17:30:06.859Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=366&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "366",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-20T03:12:15.769Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=370&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "370",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-20T20:20:25.521Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=385&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "385",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-21T07:25:37.556Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=386&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "386",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-21T14:40:50.393Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=388&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "388",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-21T20:35:15.568Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=392&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "392",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T04:12:32.440Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=411&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "411",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-22T06:32:10.249Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=432&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "rong.jin",
+            "kind": "drive#user",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64"
+          },
+          "kind": "drive#revision",
+          "id": "432",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-09-23T05:08:34.660Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=433&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "433",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-10T03:14:31.006Z",
+          "published": false
+        },
+        {
+          "exportLinks": {
+            "application/x-vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=ods",
+            "text/tab-separated-values": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=tsv",
+            "application/pdf": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=pdf",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=xlsx",
+            "text/csv": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=csv",
+            "application/zip": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=zip",
+            "application/vnd.oasis.opendocument.spreadsheet": "https://docs.google.com/spreadsheets/export?id=1QKlRGlRKXph6ph7WrPifM8KyX-G3PRJSyPGW0pE7Pjg&revision=435&exportFormat=ods"
+          },
+          "lastModifyingUser": {
+            "displayName": "",
+            "kind": "drive#user",
+            "me": false
+          },
+          "kind": "drive#revision",
+          "id": "435",
+          "mimeType": "application/vnd.google-apps.spreadsheet",
+          "modifiedTime": "2025-10-21T00:00:22.788Z",
+          "published": false
+        }
+      ],
+      "revision_count": 46,
+      "comments": [],
+      "comment_count": 0,
+      "permissions": [
+        {
+          "permissionDetails": [
+            {
+              "permissionType": "file",
+              "role": "writer",
+              "inherited": false
+            }
+          ],
+          "kind": "drive#permission",
+          "id": "anyoneWithLink",
+          "type": "anyone",
+          "role": "writer",
+          "allowFileDiscovery": false
+        },
+        {
+          "permissionDetails": [
+            {
+              "permissionType": "file",
+              "role": "owner",
+              "inherited": false
+            },
+            {
+              "permissionType": "file",
+              "role": "writer",
+              "inherited": true
+            }
+          ],
+          "kind": "drive#permission",
+          "id": "00155290359368544233",
+          "type": "user",
+          "emailAddress": "rong.jin@fullerton.edu",
+          "role": "owner",
+          "displayName": "rong.jin",
+          "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+          "deleted": false,
+          "pendingOwner": false
+        }
+      ],
+      "permission_count": 2
+    },
+    {
+      "file_id": "1aCwvKY4OqWKqOAvGTdBxRdCBQStejAYA",
+      "file_name": "CPSC 491.03 Syllabus.docx",
+      "fetch_time": "2025-10-30T02:25:07.270635",
+      "metadata": {
+        "id": "1aCwvKY4OqWKqOAvGTdBxRdCBQStejAYA",
+        "name": "CPSC 491.03 Syllabus.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "starred": false,
+        "trashed": false,
+        "explicitlyTrashed": false,
+        "spaces": [
+          "drive"
+        ],
+        "version": "888",
+        "webContentLink": "https://drive.google.com/uc?id=1aCwvKY4OqWKqOAvGTdBxRdCBQStejAYA&export=download",
+        "webViewLink": "https://docs.google.com/document/d/1aCwvKY4OqWKqOAvGTdBxRdCBQStejAYA/edit?usp=drivesdk&ouid=113164939571228990959&rtpof=true&sd=true",
+        "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "hasThumbnail": true,
+        "thumbnailLink": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPWaLDhZ0iEdgYObGae0udaAa-M4mqF3ThhCHRpcZBeaq7uV1quS6gq23OF2qdwObOF3fHNqaGIny4w0rOb06xCLT2MdRXQNi5HZANeW-JJkA=s220",
+        "thumbnailVersion": "112",
+        "viewedByMe": true,
+        "viewedByMeTime": "2025-09-22T23:33:12.092Z",
+        "createdTime": "2025-08-22T01:08:49.520Z",
+        "modifiedTime": "2025-09-22T03:31:57.130Z",
+        "modifiedByMe": false,
+        "sharedWithMeTime": "2025-08-25T23:23:21.559Z",
+        "owners": [
+          {
+            "kind": "drive#user",
+            "displayName": "rong.jin",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "emailAddress": "rong.jin@fullerton.edu"
+          }
+        ],
+        "lastModifyingUser": {
+          "kind": "drive#user",
+          "displayName": "rong.jin",
+          "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+          "me": false,
+          "permissionId": "00155290359368544233",
+          "emailAddress": "rong.jin@fullerton.edu"
+        },
+        "shared": true,
+        "ownedByMe": false,
+        "capabilities": {
+          "canAcceptOwnership": false,
+          "canAddChildren": false,
+          "canAddMyDriveParent": false,
+          "canChangeCopyRequiresWriterPermission": false,
+          "canChangeItemDownloadRestriction": false,
+          "canChangeSecurityUpdateEnabled": false,
+          "canChangeViewersCanCopyContent": false,
+          "canComment": false,
+          "canCopy": true,
+          "canDelete": false,
+          "canDisableInheritedPermissions": false,
+          "canDownload": true,
+          "canEdit": false,
+          "canEnableInheritedPermissions": false,
+          "canListChildren": false,
+          "canModifyContent": false,
+          "canModifyContentRestriction": false,
+          "canModifyEditorContentRestriction": false,
+          "canModifyOwnerContentRestriction": false,
+          "canModifyLabels": false,
+          "canMoveChildrenWithinDrive": false,
+          "canMoveItemIntoTeamDrive": false,
+          "canMoveItemOutOfDrive": false,
+          "canMoveItemWithinDrive": false,
+          "canReadLabels": false,
+          "canReadRevisions": false,
+          "canRemoveChildren": false,
+          "canRemoveContentRestriction": false,
+          "canRemoveMyDriveParent": true,
+          "canRename": false,
+          "canShare": false,
+          "canTrash": false,
+          "canUntrash": false
+        },
+        "viewersCanCopyContent": true,
+        "copyRequiresWriterPermission": false,
+        "writersCanShare": true,
+        "originalFilename": "Copy of Syllabus for CPSC 491 - Fall 2024.docx",
+        "fullFileExtension": "docx",
+        "fileExtension": "docx",
+        "md5Checksum": "0916679d8f72a38649d2741b6d82ed3f",
+        "size": "836064",
+        "quotaBytesUsed": "836064",
+        "headRevisionId": "0BzL17ak8gncSbUk0UXlqVGpoUk1sNWhrMVEvMEhWc1EzM1FnPQ",
+        "isAppAuthorized": false,
+        "linkShareMetadata": {
+          "securityUpdateEligible": false,
+          "securityUpdateEnabled": false
+        }
+      },
+      "revisions": [],
+      "revision_count": 0,
+      "comments": [],
+      "comment_count": 0,
+      "permissions": [],
+      "permission_count": 0
+    },
+    {
+      "file_id": "1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk",
+      "file_name": "CPSC 491.03 Weekly Schedule",
+      "fetch_time": "2025-10-30T02:25:08.365124",
+      "metadata": {
+        "id": "1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk",
+        "name": "CPSC 491.03 Weekly Schedule",
+        "mimeType": "application/vnd.google-apps.document",
+        "starred": false,
+        "trashed": false,
+        "explicitlyTrashed": false,
+        "spaces": [
+          "drive"
+        ],
+        "version": "266",
+        "webViewLink": "https://docs.google.com/document/d/1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk/edit?usp=drivesdk",
+        "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document",
+        "hasThumbnail": true,
+        "thumbnailLink": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOvjaRe28gEUA2DZrwitKofozaOiTTBBRLdUAnInra5l9MjIP0KNv2wX_Cj6UQExGFVj29xo9NSFSljeJLvie6i7a2Pii3glBJOJmav3jVs310MYwVIaGpt6xclhQ=s220",
+        "thumbnailVersion": "27",
+        "viewedByMe": true,
+        "viewedByMeTime": "2025-08-25T23:23:24.174Z",
+        "createdTime": "2025-08-22T01:08:59.052Z",
+        "modifiedTime": "2025-09-22T02:20:47.229Z",
+        "modifiedByMe": false,
+        "sharedWithMeTime": "2025-08-25T23:23:24.174Z",
+        "owners": [
+          {
+            "kind": "drive#user",
+            "displayName": "rong.jin",
+            "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+            "me": false,
+            "permissionId": "00155290359368544233",
+            "emailAddress": "rong.jin@fullerton.edu"
+          }
+        ],
+        "lastModifyingUser": {
+          "kind": "drive#user",
+          "displayName": "rong.jin",
+          "photoLink": "https://lh3.googleusercontent.com/a-/ALV-UjXxex_bsBLZJV0dsj5ifSbMK1DVg0FyBG6kB3AK77WCohjv-g=s64",
+          "me": false,
+          "permissionId": "00155290359368544233",
+          "emailAddress": "rong.jin@fullerton.edu"
+        },
+        "shared": true,
+        "ownedByMe": false,
+        "capabilities": {
+          "canAcceptOwnership": false,
+          "canAddChildren": false,
+          "canAddMyDriveParent": false,
+          "canChangeCopyRequiresWriterPermission": false,
+          "canChangeItemDownloadRestriction": false,
+          "canChangeSecurityUpdateEnabled": false,
+          "canChangeViewersCanCopyContent": false,
+          "canComment": false,
+          "canCopy": true,
+          "canDelete": false,
+          "canDisableInheritedPermissions": false,
+          "canDownload": true,
+          "canEdit": false,
+          "canEnableInheritedPermissions": false,
+          "canListChildren": false,
+          "canModifyContent": false,
+          "canModifyContentRestriction": false,
+          "canModifyEditorContentRestriction": false,
+          "canModifyOwnerContentRestriction": false,
+          "canModifyLabels": false,
+          "canMoveChildrenWithinDrive": false,
+          "canMoveItemIntoTeamDrive": false,
+          "canMoveItemOutOfDrive": false,
+          "canMoveItemWithinDrive": false,
+          "canReadLabels": false,
+          "canReadRevisions": false,
+          "canRemoveChildren": false,
+          "canRemoveContentRestriction": false,
+          "canRemoveMyDriveParent": true,
+          "canRename": false,
+          "canShare": false,
+          "canTrash": false,
+          "canUntrash": false
+        },
+        "viewersCanCopyContent": true,
+        "copyRequiresWriterPermission": false,
+        "writersCanShare": true,
+        "size": "41618",
+        "quotaBytesUsed": "41618",
+        "isAppAuthorized": false,
+        "exportLinks": {
+          "application/rtf": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=rtf",
+          "application/vnd.oasis.opendocument.text": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=odt",
+          "text/html": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=html",
+          "application/pdf": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=pdf",
+          "text/x-markdown": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=markdown",
+          "text/markdown": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=markdown",
+          "application/epub+zip": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=epub",
+          "application/zip": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=zip",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=docx",
+          "text/plain": "https://docs.google.com/feeds/download/documents/export/Export?id=1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk&exportFormat=txt"
+        },
+        "linkShareMetadata": {
+          "securityUpdateEligible": false,
+          "securityUpdateEnabled": false
+        }
+      },
+      "revisions": [],
+      "revision_count": 0,
+      "comments": [],
+      "comment_count": 0,
+      "permissions": [],
+      "permission_count": 0
+    }
+  ]
+}

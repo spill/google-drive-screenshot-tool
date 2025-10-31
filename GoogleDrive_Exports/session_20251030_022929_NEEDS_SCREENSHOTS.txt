@@ -1,0 +1,24 @@
+FILES NEEDING SCREENSHOT CAPTURE
+======================================================================
+
+Session ID: 20251030_022929
+Analysis Date: 2025-10-31T00:38:15.665827
+Total Files Analyzed: 4
+Files Without Revisions: 2
+
+======================================================================
+
+REASON:
+These files did not provide revision history via Google Drive API.
+This typically means you have view-only or comment-only access.
+
+SOLUTION:
+Use the hybrid workflow to capture Activity logs via screenshots:
+  python simple_hybrid_example.py
+
+======================================================================
+
+FILE LIST:
+
+1. CPSC 491.03 Syllabus.docx
+2. CPSC 491.03 Weekly Schedule

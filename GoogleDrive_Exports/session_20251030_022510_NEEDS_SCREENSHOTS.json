@@ -1,0 +1,23 @@
+{
+  "session_id": "20251030_022510",
+  "analysis_date": "2025-10-31T00:38:06.016309",
+  "total_files": 4,
+  "files_with_revisions": 2,
+  "files_without_revisions": 2,
+  "files": [
+    {
+      "file_id": "1aCwvKY4OqWKqOAvGTdBxRdCBQStejAYA",
+      "file_name": "CPSC 491.03 Syllabus.docx",
+      "reason": "No revisions accessible via API",
+      "comment_count": 0,
+      "permission_count": 0
+    },
+    {
+      "file_id": "1hYeJL9rqGBJOXacO0F6oQZj0Xsk-XgWxI72KUZ1L6Sk",
+      "file_name": "CPSC 491.03 Weekly Schedule",
+      "reason": "No revisions accessible via API",
+      "comment_count": 0,
+      "permission_count": 0
+    }
+  ]
+}
